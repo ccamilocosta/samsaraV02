@@ -70,13 +70,14 @@
 
                 <div class="mt-8 bg-white dark:bg-gray-500  sm:rounded-md">
                 <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <img class="lazy" src="https://i.kisscc0.com/20180517/biq/kisscc0-black-and-white-landscape-photography-mist-nature-5afd4fc5c7ec26.6426934415265504698189.jpg" data-original="https://i.kisscc0.com/20180517/biq/kisscc0-black-and-white-landscape-photography-mist-nature-5afd4fc5c7ec26.6426934415265504698189.jpg">
+                            <div class="flex items-center" m-8 >
+                            <img src="{{ asset('images/indrasnet.jpg') }}" width="900px" height="300px" >
                                 
                             </div> 
 
                                     <div class="ml-12">
                                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                            >
                                 
                                                 "Far away in the heavenly abode, there is a wonderful net which has been hung by some cunning artificer in such a manner
                                                 that it stretches out infinitely in all directions. The artificer has hung a single glittering jewel in each "eye" of the net, and since the net itself is infinite in dimension, the jewels are infinite in number. There hang the jewels, glittering "like" stars in the first magnitude, a wonderful sight to behold. 
