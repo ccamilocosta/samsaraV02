@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"> -->
+        <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
+        <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
        
     </head>
     <body class="antialiased">
@@ -39,8 +39,22 @@
                     </g>
                 </svg>
                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-lg  ">Samsara</div></br>
-            </div>                                              
-        </div>
+            </div> 
+     
+                <h2>Share your Story </h2>
+                <div class="row">
+                    <form action="/create" method="post">
+                        <div class="col-4 sm">
+                        <input class="form-control me-2type" type="text" name="title" placeholder="Title">
+                </div>
+                <br>
+                <div class="col-4 sm">
+                <input class="form-control me-2type" type="text" name="content" placeholder="Content">
+                </div>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>                                         
+    </div>
     </body>
 </html>
     

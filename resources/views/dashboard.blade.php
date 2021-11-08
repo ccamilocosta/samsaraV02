@@ -1,3 +1,8 @@
+<!-- @extends ('master') -->
+<!-- @section ('inc.search') -->
+<!-- @section ('content') -->
+<!-- @section('footer') -->
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -15,3 +20,20 @@
         </div>
     </div>
 </x-app-layout>
+
+<h2> Recent messages </h2>
+<ul> 
+         @if($articles->isNotEmpty())
+           @foreach ($articles as $article)  
+        <li>
+        <h3><a href="/articles/{{$article->id}}">{{$message->title}}</a></h3>
+            {{$article->content}}<br>
+            {{$article->created_at->diffForHumans()}}            
+        </li>
+    @endforeach
+@else 
+        <li>
+            <p>No articles found</p>
+        </li>
+@endif
+</ul>

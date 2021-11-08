@@ -32,3 +32,17 @@ Route::get('/articles', function () {
 Route::get('/articles', function () {
     return view('articles');
 })->name('articles');
+
+Route::get('/search', function(){
+  return view ('search');
+});
+
+Route::get('articles', 'ArticleController@showAll');
+
+Route::post('/create', 'ArticleController@create');
+
+Route::get('/articles/{id}', 'ArticleController@view');  
+
+Route::delete('/articles/{id}', 'ArticleController@delete');
+
+Route::get('/inc.search/', 'ArticleController@search')->name('inc.search');
