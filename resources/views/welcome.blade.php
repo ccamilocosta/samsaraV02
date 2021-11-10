@@ -18,6 +18,9 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            
+             
+            
         </style>
     </head>
     <body class="antialiased">
@@ -27,20 +30,25 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}" class="text-md text-gray-700 dark:text-gray-500 ">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+                        <a href="{{ route('login') }}" class="text-md text-gray-700 dark:text-gray-500 ">sign in</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                            <a href="{{ route('register') }}" class="ml-4 text-md text-gray-700 dark:text-gray-500">sign up</a>
                         @endif
                     @endauth
                 </div>
             @endif
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-center sm:pt-0" >
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="25.5mm" height="25.25mm" viewBox="-1375 -875 6550 5125">
+            <div class=" max-w-6xl mx-auto sm:px-8 lg:px-6">
+                <div class="
+                space-y-4
+                flex justify-center 
+                 pt-8
+                 sm:justify-center sm:pt-0" >
+                 <div>
+                        <svg class="block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="25.5mm" height="25.25mm" viewBox="-1375 -875 6550 5125">
                         <g id="Endless_Knot_by_Adam_Stanislav" transform="rotate(45,2250,2750)">
                             <path id="Fill" fill="rgb(50%,50%,100%)" d="M0,0h1500v1000h500v-1000h1500v1500h-1000v500h1000v1500h-1000v1000h-1500v-1000h-500v1000h-1500v-1500h1000v-500h-1000v-1500h1000ZM500,500v500h500v-500ZM2550,500v500h500v-500ZM1500,1500v500h500v-500ZM500,1500v500h500v-500ZM-500,1500v500h500v-500ZM500,2500v500h500v-500ZM1500,2500v500h500v-500ZM2500,2500v500h500v-500ZM1500,3500v500h500v-500ZM-500,3500v500h500v-500Z" />
                             <g id="Strokes" fill="none" stroke="rgb(0%,0%,0%)" stroke-width="50">
@@ -65,27 +73,27 @@
                         </g>
                         </g>
                     </svg>
-                    <div class="mt-2 text-gray-600 dark:text-gray-400 text-lg  ">Samsara</div>
+                    <div class="block text-gray-700 dark:text-gray-400 text-lg  ">&nbsp&nbsp&nbspsamsara</div>
+                </div>
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-500  sm:rounded-md">
                 <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center" m-8 >
-                            <img src="{{ asset('images/indrasnet.jpg') }}" width="900px" height="300px" >
+                            <div class="flex items-center justify-center" m-10 >
+                                <img src="{{ asset('images/indrasnet.jpg') }}" width="900px" height="300px"  >
                                 
                             </div> 
+                            
+                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-md justify-center">
+                                                                           
+                             "Far away in the heavenly abode, there is a wonderful net which has been hung by some cunning artificer in such a manner
+                             that it stretches out infinitely in all directions. The artificer has hung a single glittering jewel in each "eye" of the net, and since the net itself is infinite in dimension, the jewels are infinite in number. There hang the jewels, glittering "like" stars in the first magnitude, a wonderful sight to behold. 
+                             If we now arbitrarily select one of these jewels for inspection and look closely at it, we will discover that in its polished surface there are reflected all the other jewels in the net, infinite in number. Not only that, but each of the jewels reflected in this one jewel is also reflecting all the other jewels, so that there is an infinite reflecting process occurring."</br>
+                             We are here to reflect ourselves through our stories.</br> 
+                             <strong>Please join us.</strong>
 
-                                    <div class="ml-12">
-                                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                            >
                                 
-                                                "Far away in the heavenly abode, there is a wonderful net which has been hung by some cunning artificer in such a manner
-                                                that it stretches out infinitely in all directions. The artificer has hung a single glittering jewel in each "eye" of the net, and since the net itself is infinite in dimension, the jewels are infinite in number. There hang the jewels, glittering "like" stars in the first magnitude, a wonderful sight to behold. 
-                                                If we now arbitrarily select one of these jewels for inspection and look closely at it, we will discover that in its polished surface there are reflected all the other jewels in the net, infinite in number. Not only that, but each of the jewels reflected in this one jewel is also reflecting all the other jewels, so that there is an infinite reflecting process occurring.".
-                                                We are here to reflect our selvies through our stories.</br> 
-                                                <strong>Please sign in.</strong>
 
-                                </div>
                             </div>
                         </div>
 

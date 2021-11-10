@@ -14,7 +14,7 @@ class ArticleController extends Controller
         return view('articles', ['articles' => $article]); 
     }
     
-    public function create(Request $request) {
+    public function createart(Request $request) {
         $article = new Article(); 
         $article->title = $request->title;
         $article->content = $request->content;
@@ -48,6 +48,6 @@ class ArticleController extends Controller
             ->get();
     
         // Return the search view with the resluts compacted
-        return view('articles', compact('articles'));
+        return view('dashboard', compact('articles'));
     }
 }

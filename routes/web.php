@@ -27,22 +27,27 @@ Route::get('/articles', function () {
     return view('articles');
 })->middleware(['auth'])->name('articles');
 
-//Route::get('/articles', [Article_Controller::class, 'show']);
 
-Route::get('/articles', function () {
-    return view('articles');
-})->name('articles');
+Route::get('/articles', 'ArticleController@showAll')->middleware(['auth'])->name('article');
 
-Route::get('/search', function(){
-  return view ('search');
-});
+Route::post('/articles', 'ArticleController@createart')->middleware(['auth'])->name('createart');
 
-Route::get('articles', 'ArticleController@showAll');
+Route::get('/articles', 'ArticleController@img_filename')->middleware(['auth'])->name('createart');
 
-Route::post('/create', 'ArticleController@create');
+Route::get('inc.search', 'ArticleController@search')->name('inc.search');
 
-Route::get('/articles/{id}', 'ArticleController@view');  
+// Route::get('/search', function(){
+    // return view ('search');
+    // });
+// Route::get('/articles', function () {
+    // return view('articles');
+// })->name('articles');
+// Route::get('articles', 'ArticleController@showAll');
 
-Route::delete('/articles/{id}', 'ArticleController@delete');
+// Route::post('/create', 'ArticleController@create');
 
-Route::get('/inc.search/', 'ArticleController@search')->name('inc.search');
+// Route::get('/articles/{id}', 'ArticleController@view');  
+
+// Route::delete('/articles/{id}', 'ArticleController@delete');
+
+

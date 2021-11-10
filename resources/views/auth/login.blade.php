@@ -3,7 +3,7 @@
         <x-slot name="logo">
             <a href="">
                 
-                <img src="{{ asset('images/endlessknot.png') }}" width="60px" height="60px">
+                <img src="{{ asset('images/TheEndlessKnot.jpg') }}" width="60px" height="60px" color="purple">
             </a>
         </x-slot>
 
