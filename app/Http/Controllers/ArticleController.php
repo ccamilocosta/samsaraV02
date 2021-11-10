@@ -50,4 +50,8 @@ class ArticleController extends Controller
         // Return the search view with the resluts compacted
         return view('dashboard', compact('articles'));
     }
+    // public function newRequest(Request $request) {
+        // $newRequest = $request-> input('acceptRequest')
+        // return redirect('register', ['url' => 'register/route']);
+    // }
 }

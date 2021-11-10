@@ -21,12 +21,19 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+Route::get('/welcome', function () {
+    return view('welcome');
+})->middleware(['auth'])->name('welcome');
 
 Route::get('/articles', function () {
     return view('articles');
 })->middleware(['auth'])->name('articles');
 
+
+
+require __DIR__.'/auth.php';
+
+Route::get('/acceptRequest', 'ArticleController@newRequest')->middleware(['auth'])->name('acceptRequest');
 
 Route::get('/articles', 'ArticleController@showAll')->middleware(['auth'])->name('article');
 
@@ -34,18 +41,11 @@ Route::post('/articles', 'ArticleController@createart')->middleware(['auth'])->n
 
 Route::get('/articles', 'ArticleController@img_filename')->middleware(['auth'])->name('createart');
 
-Route::get('inc.search', 'ArticleController@search')->name('inc.search');
+Route::get('inc.search', 'ArticleController@search')->middleware(['auth'])->name('inc.search');
 
 // Route::get('/search', function(){
     // return view ('search');
     // });
-// Route::get('/articles', function () {
-    // return view('articles');
-// })->name('articles');
-// Route::get('articles', 'ArticleController@showAll');
-
-// Route::post('/create', 'ArticleController@create');
-
 // Route::get('/articles/{id}', 'ArticleController@view');  
 
 // Route::delete('/articles/{id}', 'ArticleController@delete');

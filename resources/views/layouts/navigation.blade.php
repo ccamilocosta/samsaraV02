@@ -13,8 +13,21 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('my account') }}
                     </x-nav-link>
+                    <x-nav-link
+                    :href="route('welcome')" :active="request()->routeIS('welcome')">
+                        {{__('welcome page')}}
+                    </x-nav-link>
+                    <x-nav-link
+                    :href="route('articles')" :active="request()->routeIS('articles')">
+                        {{__('our stories')}}
+                    </x-nav-link>
+                   
+                   
+                   
+
+
                 </div>
             </div>
 
