@@ -16,20 +16,11 @@
                         {{ __('my account') }}
                     </x-nav-link>
                     <x-nav-link
-                    :href="route('welcome')" :active="request()->routeIS('welcome')">
+                    :href="route('welcome')" :active="request()->routeIS('welcome')"> -->
                         {{__('welcome page')}}
-                    </x-nav-link>
-                    <x-nav-link
-                    :href="route('articles')" :active="request()->routeIS('articles')">
-                        {{__('our stories')}}
-                    </x-nav-link>
-                   
-                   
-                   
-
-
+                    </x-nav-link> 
+                                                          
                 </div>
-            </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -45,7 +36,6 @@
                             </div>
                         </button>
                     </x-slot>
-
                     <x-slot name="content">
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">

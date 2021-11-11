@@ -35,7 +35,7 @@ require __DIR__.'/auth.php';
 
 Route::get('/acceptRequest', 'ArticleController@newRequest')->middleware(['auth'])->name('acceptRequest');
 
-Route::get('/articles', 'ArticleController@showAll')->middleware(['auth'])->name('article');
+Route::get('/articles', 'ArticleController@showAll')->middleware(['auth'])->name('articles');
 
 Route::post('/articles', 'ArticleController@createart')->middleware(['auth'])->name('createart');
 

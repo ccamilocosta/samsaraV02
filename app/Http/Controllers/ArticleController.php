@@ -11,7 +11,7 @@ class ArticleController extends Controller
 
         $articles = Article::all();
     
-        return view('articles', ['articles' => $article]); 
+        return view('articles', ['articles' => $articles]); 
     }
     
     public function createart(Request $request) {
@@ -28,7 +28,7 @@ class ArticleController extends Controller
     
         $articles = Article::findOrFail($id); 
     
-        return view('articleDetails', ['article' => $message]); 
+        return view('articleDetails', ['article' => $articles]); 
     }
     
     public function delete($id) {
