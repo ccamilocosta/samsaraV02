@@ -21,7 +21,11 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->profile_image();
+          
         });
+
+        
     }
 
     /**
@@ -32,5 +36,6 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('users');
+        
     }
 }
