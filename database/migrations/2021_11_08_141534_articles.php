@@ -13,9 +13,15 @@ class Articles extends Migration
      */
     public function up()
     {
-        //
-    }
+        Schema::create('articles', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->string('description');
+            $table->string('img_filename');
+            $table->timestamps();
 
+        });
+    }
     /**
      * Reverse the migrations.
      *
@@ -25,4 +31,5 @@ class Articles extends Migration
     {
         //
     }
+
 }

@@ -7,12 +7,12 @@
 
 <h2>Article Details</h2>
 <br>
-<h3>{{$article->title}}</h3>
+<h3>{{$article ?? ''->title}}</h3>
 
-<p>{{$article->content}}</p>
+<p>{{$article ?? ''->content}}</p>
+<p>{{$article ?? ''->img_filename}}</p>
 
-
-<form action="/articles/{{$article->id}}" method="post">
+<form action="/articles/{{$article ?? ''->id}}" method="post">
     <!-- @csrf -->
     @method('delete')
     <button class="btn" type="submit">delete</button>

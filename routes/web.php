@@ -43,11 +43,16 @@ Route::get('/articles', 'ArticleController@img_filename')->middleware(['auth'])-
 
 Route::get('inc.search', 'ArticleController@search')->middleware(['auth'])->name('inc.search');
 
-// Route::get('/search', function(){
-    // return view ('search');
-    // });
-// Route::get('/articles/{id}', 'ArticleController@view');  
+Route::get('/contact', 'ContactController@show');
+Route::post('/contact', 'ContactController@mailContactForm');
 
-// Route::delete('/articles/{id}', 'ArticleController@delete');
+Route::get('/emails/mail', 'EmailController@show');
+Route::post('/emails/mail', 'EmailController@mailContactForm');
 
+Route::get('/search', function(){
+    return view ('search');
+    });
+Route::get('/articles/{id}', 'ArticleController@view');  
+
+Route::delete('/articles/{id}', 'ArticleController@delete');
 
