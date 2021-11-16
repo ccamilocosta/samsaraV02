@@ -19,6 +19,13 @@
                 <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             </div>
 
+            <!--Profile_Image  -->
+            <div>
+                <x-label for="profile_image" :value="__('profile_image')" />
+
+                <x-input id="profile_image" class="block mt-1 w-full"  method= "submit" type="file" id="avatar" name="avatar" :value="Upload" accept="image/png, image/jpg" required autofocus  >
+              
+
             <!-- Email Address -->
             <div class="mt-4">
                 <x-label for="email" :value="__('Email')" />

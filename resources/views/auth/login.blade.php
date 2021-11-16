@@ -1,9 +1,8 @@
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
-            <a href="">
-                
-                <img src="{{ asset('images/TheEndlessKnot.jpg') }}" width="60px" height="60px" color="purple">
+        <a href="/">
+                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
             </a>
         </x-slot>
 

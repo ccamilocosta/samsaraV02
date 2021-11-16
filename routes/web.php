@@ -1,6 +1,10 @@
 <?php
-
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Routes;
+use App\Http\Controllers\Auth\ArticleController;
+use App\Http\Controllers\Auth\ContactController;
+use App\Http\Controllers\Auth\EmailController;
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,9 +43,10 @@ Route::get('/articles', 'ArticleController@showAll')->middleware(['auth'])->name
 
 Route::post('/articles', 'ArticleController@createart')->middleware(['auth'])->name('createart');
 
-Route::get('/articles', 'ArticleController@img_filename')->middleware(['auth'])->name('createart');
-
 Route::get('inc.search', 'ArticleController@search')->middleware(['auth'])->name('inc.search');
+
+Route::post('/dashboard','Controller@upload');
+
 
 Route::get('/contact', 'ContactController@show');
 Route::post('/contact', 'ContactController@mailContactForm');

@@ -1,7 +1,7 @@
-@extends('master')
+@extends('layout.dashboard')
 
-@section ('inc.search')
-
+<!-- @section ('inc.search') -->
+<!--  -->
 
 @section('content')
 
@@ -13,8 +13,10 @@
 <p>{{$article ?? ''->img_filename}}</p>
 
 <form action="/articles/{{$article ?? ''->id}}" method="post">
-    <!-- @csrf -->
+
+    @csrf 
     @method('delete')
+    <!-- @method('PUT')  -->
     <button class="btn" type="submit">delete</button>
 </form>
 

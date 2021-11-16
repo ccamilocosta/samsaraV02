@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Article;
 
 class ArticleController extends Controller
 { 
@@ -17,7 +18,8 @@ class ArticleController extends Controller
     public function createart(Request $request) {
         $article = new Article(); 
         $article->title = $request->title;
-        $article->content = $request->content;
+        $article->description = $request->description;
+        $article->img_filename = $request->img_filename;
         $article->save(); 
     
         return redirect('/articles');         
@@ -52,6 +54,6 @@ class ArticleController extends Controller
     }
     // public function newRequest(Request $request) {
         // $newRequest = $request-> input('acceptRequest')
-        // return redirect('register', ['url' => 'register/route']);
+        // return redirect ('register', ['url' => 'register/route']);
     // }
 }
