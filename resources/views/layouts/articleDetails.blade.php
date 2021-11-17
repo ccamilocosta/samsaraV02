@@ -5,10 +5,8 @@
 
 @section('content')
 
-<h2>Article Details</h2>
-<br>
-<h3>{{$article ?? ''->title}}</h3>
-
+<h2>Article Details</h2><br>
+<h3>{{$article ?? ''->title}}</h>
 <p>{{$article ?? ''->content}}</p>
 <p>{{$article ?? ''->img_filename}}</p>
 

@@ -42,11 +42,11 @@
             @endif
 
             <div class=" max-w-6xl mx-auto sm:px-8 lg:px-6">
-                <div class="
-                space-y-4
+                <div class="                space-y-4
                 flex justify-center 
                  pt-8
                  sm:justify-center sm:pt-0" >
+
                  <div>
                         <svg class="block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="25.5mm" height="25.25mm" viewBox="-1375 -875 6550 5125">
                         <g id="Endless_Knot_by_Adam_Stanislav" transform="rotate(45,2250,2750)">

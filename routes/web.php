@@ -1,10 +1,14 @@
 <?php
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Routes;
 use App\Http\Controllers\Auth\ArticleController;
 use App\Http\Controllers\Auth\ContactController;
 use App\Http\Controllers\Auth\EmailController;
 use App\User;
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +41,7 @@ Route::get('/articles', function () {
 
 require __DIR__.'/auth.php';
 
+
 Route::get('/acceptRequest', 'ArticleController@newRequest')->middleware(['auth'])->name('acceptRequest');
 
 Route::get('/articles', 'ArticleController@showAll')->middleware(['auth'])->name('articles');
@@ -45,7 +50,9 @@ Route::post('/articles', 'ArticleController@createart')->middleware(['auth'])->n
 
 Route::get('inc.search', 'ArticleController@search')->middleware(['auth'])->name('inc.search');
 
-Route::post('/dashboard','Controller@upload');
+//Route::post('/dashboard','Controller@upload');
+
+//Route::post('/articles','ArticleController@upload')->middleware(['auth'])->name('articles');;
 
 
 Route::get('/contact', 'ContactController@show');

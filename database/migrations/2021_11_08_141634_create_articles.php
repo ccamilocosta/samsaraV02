@@ -19,9 +19,7 @@ class CreateArticles extends Migration
             $table->string('content');
             $table->string('img_filename');
             $table->timestamps();
-            
-            
-            
+               
         });
     }
 
@@ -32,6 +30,6 @@ class CreateArticles extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articles');
+        //Schema::dropIfExists('articles');
     }
 }

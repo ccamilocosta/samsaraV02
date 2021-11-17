@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\Models\Article;
 
@@ -19,12 +19,28 @@ class ArticleController extends Controller
         $article = new Article(); 
         $article->title = $request->title;
         $article->description = $request->description;
+        //$article->img_filename =$img_filename;
         $article->img_filename = $request->img_filename;
+        $img_filename = null;
+        if($request->hasFile('img_filename')){
+        $img_filename = time() . '.' . $request->img_filename->extension(); 
+        $img_filename = $request->img_filename->getClientOriginalName();
+        //$request->img_filename->storeAs('img_articles',$img_filename,'public');
+        $request()->update(['img_articles'=>$img_filename]);
         $article->save(); 
-    
-        return redirect('/articles');         
+        //return redirect('/articles'); 
+        return back()->with('img_articles', $img_filename);      
+        }
+    } 
+
+    public function update(Request $request)
+    {
+        $path = $request->file('img_articles')->store('img_articles');
+
+        return $path;
     }
-    
+
+
     
     public function view($id) {
     
@@ -32,6 +48,8 @@ class ArticleController extends Controller
     
         return view('articleDetails', ['article' => $articles]); 
     }
+
+
     
     public function delete($id) {
 
