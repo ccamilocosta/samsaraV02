@@ -54,8 +54,7 @@
 
                             <div class=" box md:flex justify-center border-gray-200 dark:border-gray-700">
                                 <div class="md:flex-shrink-0">
-                                    {{$article->img_filename}}
-                                    <img class="rounded-lg md:w-56" src="" width="448" height="299" alt="">
+                                    <img class="rounded-lg md:w-56" src="/img_articles/{{$article->img_filename}}" width="300" height="150" alt="">
                                 </div>
                                 <div class="mt-4 md:mt-0 md:ml-6">
                                     <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold"> <h3><a href="/articles/{{$article->id}}">{{$article->title}}</a></h3></div>

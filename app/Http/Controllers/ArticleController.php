@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\Models\Article;
+use Redirect;
 
 class ArticleController extends Controller
 { 
@@ -16,32 +17,38 @@ class ArticleController extends Controller
     }
     
     public function createart(Request $request) {
+        // validate title and description (may not be empty)
+        $request->validate([
+            'title' => 'required|max:1024',
+            'description' => 'required|max:64000'
+        ]);
+
+        // creating a new article copy values from the request into that article object
         $article = new Article(); 
         $article->title = $request->title;
         $article->description = $request->description;
-        //$article->img_filename =$img_filename;
-        $article->img_filename = $request->img_filename;
-        $img_filename = null;
-        if($request->hasFile('img_filename')){
-        $img_filename = time() . '.' . $request->img_filename->extension(); 
-        $img_filename = $request->img_filename->getClientOriginalName();
-        //$request->img_filename->storeAs('img_articles',$img_filename,'public');
-        $request()->update(['img_articles'=>$img_filename]);
-        $article->save(); 
-        //return redirect('/articles'); 
-        return back()->with('img_articles', $img_filename);      
+
+        if ($request->img_filename) {
+            /* image optional; if given, it must be a valid image file (check extension)
+            $request->validate ([
+                'img_filename' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+            ]);
+            */
+
+            // create a new file name and store the file
+            $img_filename = time() . '.' . $request->img_filename->extension(); 
+            $request->img_filename->move(public_path('img_articles'), $img_filename);     
         }
+        else $img_filename = '';
+
+        // set and save the article 
+        $article->img_filename = $img_filename;
+        $article->save();
+
+        // return to the list of articles
+        return Redirect::route('articles');
     } 
 
-    public function update(Request $request)
-    {
-        $path = $request->file('img_articles')->store('img_articles');
-
-        return $path;
-    }
-
-
-    
     public function view($id) {
     
         $articles = Article::findOrFail($id); 

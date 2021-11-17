@@ -42,13 +42,9 @@
             @endif
 
             <div class=" max-w-6xl mx-auto sm:px-8 lg:px-6">
-                <div class="                space-y-4
-                flex justify-center 
-                 pt-8
-                 sm:justify-center sm:pt-0" >
-
-                 <div>
-                        <svg class="block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="25.5mm" height="25.25mm" viewBox="-1375 -875 6550 5125">
+                <div class="space-y-4 flex justify-center pt-8 sm:justify-center sm:pt-0">
+                <div>
+                     <svg class="block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15.5mm" height="15.25mm" viewBox="-1375 -875 6550 5125">
                         <g id="Endless_Knot_by_Adam_Stanislav" transform="rotate(45,2250,2750)">
                             <path id="Fill" fill="rgb(50%,50%,100%)" d="M0,0h1500v1000h500v-1000h1500v1500h-1000v500h1000v1500h-1000v1000h-1500v-1000h-500v1000h-1500v-1500h1000v-500h-1000v-1500h1000ZM500,500v500h500v-500ZM2550,500v500h500v-500ZM1500,1500v500h500v-500ZM500,1500v500h500v-500ZM-500,1500v500h500v-500ZM500,2500v500h500v-500ZM1500,2500v500h500v-500ZM2500,2500v500h500v-500ZM1500,3500v500h500v-500ZM-500,3500v500h500v-500Z" />
                             <g id="Strokes" fill="none" stroke="rgb(0%,0%,0%)" stroke-width="50">
@@ -70,15 +66,15 @@
                                 <polyline points="500 2500 500 4500-1000 4500-1000 3000 0 3000" />
                                 <polyline points="2000 2500 2000 4000 1500 4000 1500 3500" />
                                 <polyline points="0 2500 0 4000 -500 4000 -500 3500 0 3500" />
-                        </g>
+                         </g>
                         </g>
                     </svg>
-                    <div class="block text-gray-700 dark:text-gray-400 text-lg  ">&nbsp&nbsp&nbspsamsara</div>
+                    <div class="block text-gray-700 dark:text-gray-700 text-2xl  ">samsara</div>
                 </div>
-                </div>
+            </div>
 
-                <div class="mt-8 bg-white dark:bg-gray-500  sm:rounded-md">
-                    <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
+                <div class="mt-8 bg-white dark:bg-gray-500  sm:rounded-md justify-center">
+                    <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l justify-center">
                             <div class="flex items-center justify-center" m-10 >
                                 <img src="{{ asset('images/indrasnet.jpg') }}" width="900px" height="300px"  >
                                 
