@@ -8,9 +8,12 @@ CONCEPT
 - MOCKUP + FLOW: Whimiscal:https://whimsical.com/samsara-VPHFzyxcQ2xHPNHTBGwrxN
 - and: https://docs.google.com/presentation/d/17DTV17K57zDU2gFj_RP44CdyxTjOXGgQ/edit#slide=id.gf71bbe8b59_0_40
 - FLYER:https://drive.google.com/drive/folders/121l1Nb8vIfZwSkQ-I2HmA4UdByumgVH8
+- DB Scheme:https://docs.google.com/presentation/d/17DTV17K57zDU2gFj_RP44CdyxTjOXGgQ/edit#slide=id.gf945f76f9a_1_133
 
 Micro-blog : A inter-connected community sharing life stories for healing. 
-- All registered users can post articles (with photos or not) and also comment/like
+
+  USERS ROLES AND PERMISSIONS
+- All registered users (@auth) can post articles (with photos or not) and also comment/like
 - Users have a profile picture added
 - Welcome page: ALL USERS can visit and make contact and have link to visit our SocialMedia
 - Dashboard page: AUTH USERS page where they can create/publish articles(stories)
@@ -18,8 +21,8 @@ Micro-blog : A inter-connected community sharing life stories for healing.
 
 TECHNOLOGIES
 Laravel Breeze
-MySql database ( Default in Laravel)
-DockerCompose ((created env. in Laravel)
+MySql database (Default in Laravel)
+DockerCompose (created env. in Laravel)
 NPM
 GIT
 
