@@ -1,34 +1,37 @@
 Samsara
+
+RESEARCH
+- https://trello.com/c/sFsNObOv/8-research
+
 CONCEPT
 
-MOCKUP + FLOW: Whimiscal:https://whimsical.com/samsara-VPHFzyxcQ2xHPNHTBGwrxN
-and: https://docs.google.com/presentation/d/17DTV17K57zDU2gFj_RP44CdyxTjOXGgQ/edit#slide=id.gf71bbe8b59_0_40
-FLYER:https://drive.google.com/drive/folders/121l1Nb8vIfZwSkQ-I2HmA4UdByumgVH8
+- MOCKUP + FLOW: Whimiscal:https://whimsical.com/samsara-VPHFzyxcQ2xHPNHTBGwrxN
+- and: https://docs.google.com/presentation/d/17DTV17K57zDU2gFj_RP44CdyxTjOXGgQ/edit#slide=id.gf71bbe8b59_0_40
+- FLYER:https://drive.google.com/drive/folders/121l1Nb8vIfZwSkQ-I2HmA4UdByumgVH8
 
 Micro-blog : A inter-connected community sharing life stories for healing. 
-All registered users can post articles (with photos or not) and also comment/like
-Users have a profile picture added
-Welcome page: ALL USERS can visit and make contact and have link to visit our SocialMedia
-Dashboard page: AUTH USERS page where they can create/publish articles(stories)
-Articles page: List of Articles(stories) with author profile name/picture + picture + Title + Text
+- All registered users can post articles (with photos or not) and also comment/like
+- Users have a profile picture added
+- Welcome page: ALL USERS can visit and make contact and have link to visit our SocialMedia
+- Dashboard page: AUTH USERS page where they can create/publish articles(stories)
+- Articles page: List of Articles(stories) with author profile name/picture + picture + Title + Text
 
 TECHNOLOGIES
 Laravel Breeze
-MySql data base
-DockerCompose
+MySql database ( Default in Laravel)
+DockerCompose ((created env. in Laravel)
 NPM
 GIT
 
-LANGUAGES
+LANGUAGES:
 PHP
 HTML/CSS/JS
 
 LARAVEL INSTALATION AND ENVIRONMENT SET UP
 https://drive.google.com/drive/folders/1W3EVh8bLZ9XxiEpvKOFAVmyL2MTANxyL
 
-GITHUB REPO 
+GITHUB REPO: 
 https://drive.google.com/drive/folders/1W3EVh8bLZ9XxiEpvKOFAVmyL2MTANxyL
-
 
 
 WORK TOOLS:
