@@ -37,7 +37,9 @@ Route::get('/articles', function () {
     return view('articles');
 })->middleware(['auth'])->name('articles');
 
-
+// Route::get('/articles', function () {
+//     return view('articleDetails');
+// })->middleware(['auth'])->name('articleDetails');
 
 require __DIR__.'/auth.php';
 
@@ -54,6 +56,8 @@ Route::get('inc.search', 'ArticleController@search')->middleware(['auth'])->name
 
 //Route::post('/articles','ArticleController@upload')->middleware(['auth'])->name('articles');;
 
+Route::get('/articles/{id}', 'ArticleController@view')->middleware(['auth'])->name('articleDetails');
+
 
 Route::get('/contact', 'ContactController@show');
 Route::post('/contact', 'ContactController@mailContactForm');
@@ -64,7 +68,7 @@ Route::post('/emails/mail', 'EmailController@mailContactForm');
 Route::get('/search', function(){
     return view ('search');
     });
-Route::get('/articles/{id}', 'ArticleController@view');  
+  
 
 Route::delete('/articles/{id}', 'ArticleController@delete');
 

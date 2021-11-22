@@ -52,17 +52,18 @@
                 @if($articles->isNotEmpty())
                     @foreach ($articles as $article)
 
-                            <div class=" box md:flex justify-center border-gray-200 dark:border-gray-700">
-                                <div class="md:flex-shrink-0">
+                            <div class=" box md:flex justify-center border-gray-200 dark:border-gray-700 ">
+                                <div class="md:flex-shrink-0 ">
                                     <img class="rounded-lg md:w-56" src="/img_articles/{{$article->img_filename}}" width="300" height="150" alt="">
-                                </div>
-                                <div class="mt-4 md:mt-0 md:ml-6">
-                                    <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold"> <h3><a href="/articles/{{$article->id}}">{{$article->title}}</a></h3></div>
+                                </div></br>
+                                <div class="mt-4 md:mt-0 md:ml-6 ">
+                                    <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold"> <h3>{{$article->title}}</h3></div>
                                         <li>
                                             {{$article->created_at->diffForHumans()}}      
                                         </li>
                                         <!-- <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Finding customers for your new business</a> -->
                                         <p class="mt-2 text-gray-600">{{$article->description}}</p>
+                                        <p class><a href="/articles/{{$article->id}}">read more</a>
                                     </div>
                                     
                                 </div>

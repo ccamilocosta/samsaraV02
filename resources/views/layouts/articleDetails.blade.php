@@ -7,6 +7,7 @@
 
 <h2>Article Details</h2><br>
 <h3>{{$article ?? ''->title}}</h>
+<p>{{$article ?? ''->author}}</p>
 <p>{{$article ?? ''->description}}</p>
 <p>{{$article ?? ''->img_filename}}</p>
 

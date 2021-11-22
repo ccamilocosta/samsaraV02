@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Articles extends Migration
+class AddAuthorToArticlesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,11 @@ class Articles extends Migration
      */
     public function up()
     {
-        Schema::create('articles', function (Blueprint $table) {
-            $table->id();
+        Schema::table('articles', function (Blueprint $table) {
             $table->string('author');
-            $table->string('title');
-            $table->string('description');
-            $table->string('img_filename');
-            $table->timestamps();
-
         });
     }
+
     /**
      * Reverse the migrations.
      *
@@ -30,7 +25,8 @@ class Articles extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('articles', function (Blueprint $table) {
+            //
+        });
     }
-
 }
