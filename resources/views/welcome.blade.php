@@ -38,7 +38,7 @@
                     @endauth
                 </div>
             @endif
-
+        
             <div class=" max-w-6xl mx-auto sm:px-8 lg:px-6">
                 <div class="space-y-4 flex justify-center pt-8 sm:justify-center sm:pt-0  ">
                     <svg class="block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15.5mm" height="15.25mm" viewBox="-1375 -875 6550 5125">
@@ -83,7 +83,8 @@
                                     <div class="flex items-center">
                                         <svg class="svg-icon" style="width: 2em; height: 2em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M510.293637 60.72299c-247.537769 0-448.208115 200.670346-448.208115 448.208115 0 247.538793 200.670346 448.208115 448.208115 448.208115 247.538793 0 448.208115-200.670346 448.208115-448.208115C958.501752 261.392312 757.83243 60.72299 510.293637 60.72299zM664.825153 874.792747c-48.916083 20.690228-100.908224 31.181163-154.531516 31.181163s-105.614409-10.490935-154.531516-31.181163c-47.273676-19.99438-89.73986-48.629557-126.220726-85.110423-0.058328-0.059352-0.11461-0.118704-0.172939-0.178055 48.310286-113.693412 158.834518-186.952926 282.632055-186.952926 121.626082 0 233.232972 73.65758 281.588283 184.526667-0.850367 0.865717-1.684362 1.744737-2.542916 2.604314C754.565013 826.163189 712.098829 854.798367 664.825153 874.792747zM511.999488 532.465101c-70.532403 0-127.914298-57.381895-127.914298-127.913275 0-70.53138 57.381895-127.913275 127.914298-127.913275 70.53138 0 127.912251 57.381895 127.912251 127.913275C639.91174 475.083206 582.530868 532.465101 511.999488 532.465101zM829.959144 744.498238c-26.631544-51.340295-65.291029-95.443769-113.349581-128.948861-36.33351-25.330922-76.510558-43.442418-118.842689-53.833069 55.555294-30.439266 93.310176-89.473801 93.310176-157.164482 0-98.743932-80.33363-179.078585-179.077561-179.078585-98.744955 0-179.079608 80.33363-179.079608 179.078585 0 67.692728 37.756929 126.72931 93.315292 157.167552-41.219797 10.122545-80.416518 27.567869-115.981525 51.853995-50.135864 34.235732-90.362031 80.069617-117.597325 133.654023-19.404955-25.794479-35.555797-53.81158-48.224328-83.764775-20.689205-48.917106-31.18014-100.908224-31.18014-154.531516 0-53.622268 10.490935-105.614409 31.18014-154.531516 19.995403-47.273676 48.63058-89.73986 85.110423-126.220726s78.94705-65.11502 126.220726-85.110423c48.916083-20.689205 100.908224-31.18014 154.531516-31.18014s105.615433 10.490935 154.531516 31.18014c47.273676 19.995403 89.73986 48.63058 126.220726 85.110423s65.116043 78.94705 85.110423 126.220726c20.690228 48.916083 31.181163 100.908224 31.181163 154.531516 0 53.623291-10.490935 105.614409-31.181163 154.531516C863.930863 692.364881 848.46052 719.458959 829.959144 744.498238z"  />
                                         </svg>
-                                        <div class="dark:bg-gray-500  sm:rounded-md block ml-4 text-lg leading-7 font-semibold"><a href="" class=" text-gray-900 dark:text-white">About Us</a>
+                                        <div class="dark:bg-gray-500  sm:rounded-md block ml-4 text-lg leading-7 font-semibold"><p class="ml-4 text-lg leading-7 font-semibold" >About Us</p>
+
                                     </div>
                                 </div> 
                             
@@ -92,18 +93,20 @@
                                             Samsara is community driven</br>
                                            &nbsp&nbsp&nbspShare and Support</br></br>
                                             <div class="block dark:bg-gray-500  sm:rounded-md  grid-cols-3 gap-1 place-items-center h-40 grid-flow-col justify:center">
-                                                <a href= ""><img src="{{ asset('images/instagramlogo.jpg') }}" width="60px" height="60px" ></a>
+                                                <a href= "https://www.instagram.com/samsara.blog/"><img src="{{ asset('images/instagramlogo.jpg') }}" width="60px" height="60px" ></a>
                                                 <a href=""><img src="{{ asset('images/facebooklogo.jpg') }}" width="60px" height="60px"></a>
-                                                <a href=""> <img src="{{ asset('images/twitterlogo.jpg') }}" width="60px" height="60px"></a>
+                                                <a href="https://twitter.com/samsara_blog"> <img src="{{ asset('images/twitterlogo.jpg') }}" width="60px" height="60px"></a>
                                             </div>    
                                 </div> 
  
                                 <div class="p-6 border-t border-gray-200 dark:border-gray-700">
                                         <div class="flex items-center">
-                                        <svg class="svg-icon" style="width: 2em; height: 2em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M673.1776 480.4608l270.165333-263.543467C950.9888 224.494933 955.733333 235.008 955.733333 246.6816l0 530.602667c0 11.025067-4.3008 20.957867-11.229867 28.433067L673.1776 480.4608zM82.1248 215.688533C89.4976 208.9984 99.157333 204.8 109.8752 204.8l804.283733 0c10.717867 0 20.3776 4.1984 27.7504 10.888533L512 553.8816 82.1248 215.688533zM79.496533 805.751467C72.567467 798.276267 68.266667 788.343467 68.266667 777.284267L68.266667 246.6816c0-11.6736 4.744533-22.186667 12.3904-29.7984l270.165333 263.543467L79.496533 805.751467zM512 637.678933l112.810667-110.045867 317.8496 280.029867C935.2192 814.762667 925.218133 819.2 914.1248 819.2L109.8752 819.2c-11.0592 0-21.060267-4.437333-28.535467-11.537067l317.8496-280.029867L512 637.678933z"  /></svg>
-                                            <div class="ml-4 text-lg leading-7 font-semibold">Contact Us</div>
+                                            <svg class="svg-icon" style="width: 2em; height: 2em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M673.1776 480.4608l270.165333-263.543467C950.9888 224.494933 955.733333 235.008 955.733333 246.6816l0 530.602667c0 11.025067-4.3008 20.957867-11.229867 28.433067L673.1776 480.4608zM82.1248 215.688533C89.4976 208.9984 99.157333 204.8 109.8752 204.8l804.283733 0c10.717867 0 20.3776 4.1984 27.7504 10.888533L512 553.8816 82.1248 215.688533zM79.496533 805.751467C72.567467 798.276267 68.266667 788.343467 68.266667 777.284267L68.266667 246.6816c0-11.6736 4.744533-22.186667 12.3904-29.7984l270.165333 263.543467L79.496533 805.751467zM512 637.678933l112.810667-110.045867 317.8496 280.029867C935.2192 814.762667 925.218133 819.2 914.1248 819.2L109.8752 819.2c-11.0592 0-21.060267-4.437333-28.535467-11.537067l317.8496-280.029867L512 637.678933z"></svg>
+                                            <p class="ml-4 text-lg leading-7 font-semibold" >Email Us</p>
+                                        </div>
+                                        <a href="mailto: samsara.ch.blog@gmail.com?subject=Mail from xyz.com text-lg font semi-bold text-purple-500 focus:text-blue-600 " target="_blank">samsara.ch.blog@gmail.com</a>
                                     </div></br>
-                                    <div class="page-content theme-content bg-gray-100">
+                                    <!-- <div class="page-content theme-content bg-gray-100">
                                         <form method="post" action="/contact" class="contact-form">
                                             <div class="contact-form-block contact-name">
                                                 <label class="contact-label" for="name">Name</label>
@@ -128,11 +131,15 @@
                                                     <div class="input-holder">
                                                         <textarea name="message" id="message" tabindex="4">
                                                         </textarea>
-                                                    </div>
-                                            </div>
+                                                    </div> -->
+                                            <!-- </div>
                                             <div class="contact-form-block contact-send">
                                                 <button class="send-message-button button" type="submit" name="submit" title="Send message" tabindex="6">Send message</button>
-                                            </div>
+                                            </div> -->
+                                           
+                                            <!-- <a href= "https://accounts.google.com/signin/v2/identifier?hl=de&continue=https%3A%2F%2Fmail.google.com&service=mail&ec=GAlAFw&flowName=GlifWebSignIn&flowEntry=AddSession"><img src="{{ asset('images/gmail1.png') }}"  width="60px" height="60px" ></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp -->
+                                            <!-- <a href= "https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&redirect_uri=https%3a%2f%2foutlook.office.com%2fowa%2f&resource=00000002-0000-0ff1-ce00-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid&msafed=1&msaredir=1&client-request-id=fbf1a282-5f3e-302f-2d3c-4c7e313772fc&protectedtoken=true&claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&nonce=637731854967367760.d8d90a78-357c-41ae-b0ac-8a0c6fdf0871&state=Dcu9DoIwFEDhou_iVrml0NsOxEFjGHBBEw3b7Q8JRIIBgvHt7fCd7SSMsX20ixKIYagkohS6yI1CqRAVHL32Bgg1lwU6ngsK3AI5rgmc6nwHGkUS30s6fSk9LSutoRSHOfh-Dm59TCVVDbjqpuqf2fyrWWxm5no0Yzu-h_ZeDDaDzT6vH3vWfw"><img src="{{ asset('images/Outlook.png') }}" width="60px" height="60px" ></a> -->
+
                                             <div class="contact-form-block contact-recaptcha"></br>
                                                 <div class="recaptcha-note">
                                                     <script src="https://www.google.com/recaptcha/api.js"></script><script src="/assets/contact-f51a3186ef7555bfa4120f445cc0da56a45f7438219f2facd21441a27bb64956.js"></script><style>.grecaptcha-badge { visibility: hidden; }</style>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy"><strong>Privacy Policy</strong></a> and <a href="https://policies.google.com/terms"><strong>Terms of Service</strong></a> apply.
@@ -146,16 +153,16 @@
                                         <img src="{{ asset('images/back to top.png') }}" width="60px" height="60px"></a>
                                         <p>back to the top</p>
                                     </div>                   
-                    </div>
-            </div>
-        </div>
-                                <div class="flex justify-center mt-4 sm:items-center sm:">
-                                            
-                                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                                        <div class="flex items-center">
-                                            <img src="{{ asset('images/c3logo.jpg')}}" width="60px" height="30px" >
-                                        </div></br>
+                         </div>
+                     </div>
+            
+                                    <div class="flex justify-center mt-4 sm:items-center sm:">
+                                            <div class="flex items-center">
+                                                <img src="{{ asset('images/c3logo.jpg')}}" width="60px" height="30px" >
+                                            </div> 
+                                                <div class="text-center text-sm text-gray-900 sm:text-left font-semibold">&nbsp&nbsp&nbsp&nbsp2021
+                                            </div>
                                     </div> 
-                                </div>  
+        </div> 
     </body>
 </html>

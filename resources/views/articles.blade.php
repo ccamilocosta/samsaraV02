@@ -11,7 +11,7 @@
        
     </head>
     <body class="antialiased">
-        <div class=" max-w-6xl mx-auto sm:px-8 lg:px-6">
+            <div class=" max-w-6xl mx-auto sm:px-8 lg:px-6">
                 <div class="                space-y-4
                     flex justify-center 
                     pt-8
@@ -45,16 +45,16 @@
                             <div class="block text-gray-700 dark:text-gray-400 text-lg  ">&nbsp&nbsp&nbspsamsara</div>
                             </div>
                 </div>
-           </div>
-       <ul class=" p-6 border-t border-gray-200 dark:border-gray-700">
+            </div>
+            <ul class=" p-6 border-t border-gray-200 dark:border-gray-700">
                 <h1 class="flex justify-center uppercase tracking-wide text-sm text-indigo-600 font-bold"> recent stories </h1>
             
                 @if($articles->isNotEmpty())
                     @foreach ($articles as $article)
 
                             <div class=" box md:flex justify-center border-gray-200 dark:border-gray-700 ">
-                                <div class="md:flex-shrink-0 ">
-                                    <img class="rounded-lg md:w-56" src="/img_articles/{{$article->img_filename}}" width="300" height="150" alt="">
+                                <div class="lg:flex-shrink-0 ">
+                                    <img class="rounded-lg md:w-56" src="/img_articles/{{$article->img_filename}}" width="480" height="240" alt="">
                                 </div></br>
                                 <div class="mt-4 md:mt-0 md:ml-6 ">
                                     <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold"> <h3>{{$article->title}}</h3></div>
@@ -62,10 +62,9 @@
                                             {{$article->created_at->diffForHumans()}}      
                                         </li>
                                         <!-- <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Finding customers for your new business</a> -->
-                                        <p class="mt-2 text-gray-600">{{$article->description}}</p>
-                                        <p class><a href="/articles/{{$article->id}}">read more</a>
+                                        <p class="mt-2 text-gray-600">{{$article->description}}</p></br></br>
+                                        <!-- <p class><a href="/articles/">read more</a> -->
                                     </div>
-                                    
                                 </div>
                             </div>
                     @endforeach
@@ -75,6 +74,12 @@
                             </li>
                 @endif
             </ul>
+
+                            <x-nav-link
+                                :href="route('dashboard')" :active="request()->routeIS('dashboard')"> 
+                                {{__('back')}}
+                            </x-nav-link> 
+
     </body>
 </html>
     
