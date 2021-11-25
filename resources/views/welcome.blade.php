@@ -24,7 +24,7 @@
     <body class="antialiased">
         <a name="top"></a>
        
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+        <div class="justify-center">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
@@ -39,8 +39,7 @@
                 </div>
             @endif
         
-            <div class=" max-w-6xl mx-auto sm:px-8 lg:px-6">
-                <div class="space-y-4 flex justify-center pt-8 sm:justify-center sm:pt-0  ">
+                <div class="">
                     <svg class="block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15.5mm" height="15.25mm" viewBox="-1375 -875 6550 5125">
                         <g id="Endless_Knot_by_Adam_Stanislav" transform="rotate(45,2250,2750)">
                             <path id="Fill" fill="rgb(50%,50%,100%)" d="M0,0h1500v1000h500v-1000h1500v1500h-1000v500h1000v1500h-1000v1000h-1500v-1000h-500v1000h-1500v-1500h1000v-500h-1000v-1500h1000ZM500,500v500h500v-500ZM2550,500v500h500v-500ZM1500,1500v500h500v-500ZM500,1500v500h500v-500ZM-500,1500v500h500v-500ZM500,2500v500h500v-500ZM1500,2500v500h500v-500ZM2500,2500v500h500v-500ZM1500,3500v500h500v-500ZM-500,3500v500h500v-500Z" />
@@ -63,15 +62,16 @@
                                 <polyline points="500 2500 500 4500-1000 4500-1000 3000 0 3000" />
                                 <polyline points="2000 2500 2000 4000 1500 4000 1500 3500" />
                                 <polyline points="0 2500 0 4000 -500 4000 -500 3500 0 3500" />
-                         </g>
+                            </g>
                         </g>
                     </svg>
                              <div class="block text-gray-700 text-3xl justify-center">samsara</div>
-                </div> 
+                </div>
+        </div> 
 
-                    <div class="mt-8 bg-white dark:bg-gray-500  sm:rounded-md justify-center">
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l justify-center">
-                            <img src="{{ asset('images/indrasnet.jpg') }}" width="1090" height="500px">
+                    <div class="flex-auto mt-8 bg-white dark:bg-gray-500  sm:rounded-md justify-center">
+                        <div class="flex-auto p-6 border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l justify-center">
+                            <img src="{{ asset('images/indrasnet.jpg') }}" width="1600" height="500px">
                             <h4>"There is a wonderful net 
                                 that stretches out infinitely in all directions. 
                                 There hang the jewels, glittering "like" stars in the first magnitude. 
@@ -99,46 +99,46 @@
                                             </div>    
                                 </div> 
  
-                                <div class="p-6 border-t border-gray-200 dark:border-gray-700">
+                                 <div class="p-6 border-t border-gray-200 dark:border-gray-700">
                                         <div class="flex items-center">
                                             <svg class="svg-icon" style="width: 2em; height: 2em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M673.1776 480.4608l270.165333-263.543467C950.9888 224.494933 955.733333 235.008 955.733333 246.6816l0 530.602667c0 11.025067-4.3008 20.957867-11.229867 28.433067L673.1776 480.4608zM82.1248 215.688533C89.4976 208.9984 99.157333 204.8 109.8752 204.8l804.283733 0c10.717867 0 20.3776 4.1984 27.7504 10.888533L512 553.8816 82.1248 215.688533zM79.496533 805.751467C72.567467 798.276267 68.266667 788.343467 68.266667 777.284267L68.266667 246.6816c0-11.6736 4.744533-22.186667 12.3904-29.7984l270.165333 263.543467L79.496533 805.751467zM512 637.678933l112.810667-110.045867 317.8496 280.029867C935.2192 814.762667 925.218133 819.2 914.1248 819.2L109.8752 819.2c-11.0592 0-21.060267-4.437333-28.535467-11.537067l317.8496-280.029867L512 637.678933z"></svg>
                                             <p class="ml-4 text-lg leading-7 font-semibold" >Email Us</p>
                                         </div>
                                         <a href="mailto: samsara.ch.blog@gmail.com?subject=Mail from xyz.com text-lg font semi-bold text-purple-500 focus:text-blue-600 " target="_blank">samsara.ch.blog@gmail.com</a>
-                                    </div></br>
-                                    <!-- <div class="page-content theme-content bg-gray-100">
-                                        <form method="post" action="/contact" class="contact-form">
-                                            <div class="contact-form-block contact-name">
-                                                <label class="contact-label" for="name">Name</label>
+                                </div></br>
+                                        <!-- <div class="page-content theme-content bg-gray-100">
+                                            <form method="post" action="/contact" class="contact-form">
+                                                <div class="contact-form-block contact-name">
+                                                    <label class="contact-label" for="name">Name</label>
                                                     <div class="input-holder">
                                                         <input type="text" name="name" id="name" value="" tabindex="1" />
                                                     </div>
-                                            </div>
-                                            <div class="contact-form-block contact-email">
-                                                    <label class="contact-label" for="email">Email</label>
-                                                        <div class="input-holder">
-                                                            <input type="text" name="email" id="email" value="" tabindex="2" />
-                                                        </div>
-                                            </div>
-                                            <div class="contact-form-block contact-subject">
-                                                    <label class="contact-label" for="subject">Subject</label>
+                                               </div>
+                                               <div class="contact-form-block contact-email">
+                                                        <label class="contact-label" for="email">Email</label>
+                                                            <div class="input-holder">
+                                                                <input type="text" name="email" id="email" value="" tabindex="2" />
+                                                            </div>
+                                                </div>
+                                                    <div class="contact-form-block contact-subject">
+                                                        <label class="contact-label" for="subject">Subject</label>
                                                         <div class="input-holder">
                                                             <input type="text" name="subject" id="subject" value="" tabindex="3" />
                                                         </div>
-                                            </div>
-                                            <div class="contact-form-block contact-message">
-                                                <label class="contact-label" for="message">Message</label>
-                                                    <div class="input-holder">
+                                                    </div>
+                                                    <div class="contact-form-block contact-message">
+                                                        <label class="contact-label" for="message">Message</label>
+                                                        <div class="input-holder">
                                                         <textarea name="message" id="message" tabindex="4">
                                                         </textarea>
                                                     </div> -->
-                                            <!-- </div>
-                                            <div class="contact-form-block contact-send">
-                                                <button class="send-message-button button" type="submit" name="submit" title="Send message" tabindex="6">Send message</button>
-                                            </div> -->
+                                                <!-- </div>
+                                                <div class="contact-form-block contact-send">
+                                                 <button class="send-message-button button" type="submit" name="submit" title="Send message" tabindex="6">Send message</button>
+                                                </div> -->
                                            
-                                            <!-- <a href= "https://accounts.google.com/signin/v2/identifier?hl=de&continue=https%3A%2F%2Fmail.google.com&service=mail&ec=GAlAFw&flowName=GlifWebSignIn&flowEntry=AddSession"><img src="{{ asset('images/gmail1.png') }}"  width="60px" height="60px" ></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp -->
-                                            <!-- <a href= "https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&redirect_uri=https%3a%2f%2foutlook.office.com%2fowa%2f&resource=00000002-0000-0ff1-ce00-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid&msafed=1&msaredir=1&client-request-id=fbf1a282-5f3e-302f-2d3c-4c7e313772fc&protectedtoken=true&claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&nonce=637731854967367760.d8d90a78-357c-41ae-b0ac-8a0c6fdf0871&state=Dcu9DoIwFEDhou_iVrml0NsOxEFjGHBBEw3b7Q8JRIIBgvHt7fCd7SSMsX20ixKIYagkohS6yI1CqRAVHL32Bgg1lwU6ngsK3AI5rgmc6nwHGkUS30s6fSk9LSutoRSHOfh-Dm59TCVVDbjqpuqf2fyrWWxm5no0Yzu-h_ZeDDaDzT6vH3vWfw"><img src="{{ asset('images/Outlook.png') }}" width="60px" height="60px" ></a> -->
+                                                 <!-- <a href= "https://accounts.google.com/signin/v2/identifier?hl=de&continue=https%3A%2F%2Fmail.google.com&service=mail&ec=GAlAFw&flowName=GlifWebSignIn&flowEntry=AddSession"><img src="{{ asset('images/gmail1.png') }}"  width="60px" height="60px" ></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp -->
+                                                <!-- <a href= "https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&redirect_uri=https%3a%2f%2foutlook.office.com%2fowa%2f&resource=00000002-0000-0ff1-ce00-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid&msafed=1&msaredir=1&client-request-id=fbf1a282-5f3e-302f-2d3c-4c7e313772fc&protectedtoken=true&claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&nonce=637731854967367760.d8d90a78-357c-41ae-b0ac-8a0c6fdf0871&state=Dcu9DoIwFEDhou_iVrml0NsOxEFjGHBBEw3b7Q8JRIIBgvHt7fCd7SSMsX20ixKIYagkohS6yI1CqRAVHL32Bgg1lwU6ngsK3AI5rgmc6nwHGkUS30s6fSk9LSutoRSHOfh-Dm59TCVVDbjqpuqf2fyrWWxm5no0Yzu-h_ZeDDaDzT6vH3vWfw"><img src="{{ asset('images/Outlook.png') }}" width="60px" height="60px" ></a> -->
 
                                             <div class="contact-form-block contact-recaptcha"></br>
                                                 <div class="recaptcha-note">
@@ -154,15 +154,14 @@
                                         <p>back to the top</p>
                                     </div>                   
                          </div>
-                     </div>
+                    </div>
             
-                                    <div class="flex justify-center mt-4 sm:items-center sm:">
+                                        <div class="flex justify-center mt-4 sm:items-center sm:">
                                             <div class="flex items-center">
                                                 <img src="{{ asset('images/c3logo.jpg')}}" width="60px" height="30px" >
                                             </div> 
                                                 <div class="text-center text-sm text-gray-900 sm:text-left font-semibold">&nbsp&nbsp&nbsp&nbsp2021
                                             </div>
-                                    </div> 
-        </div> 
+                                        </div> 
     </body>
 </html>
